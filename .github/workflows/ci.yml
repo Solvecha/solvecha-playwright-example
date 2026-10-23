@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+# Lint and syntax checks only. The examples need a Solvecha key and a real browser, so CI never runs them.
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Node.js syntax
+        run: |
+          for f in node/*.mjs puppeteer/*.mjs; do node --check "$f"; done
+      - name: Python syntax
+        run: python -m py_compile python/*.py selenium/*.py
+      - name: Shell script
+        run: bash -n scripts/get-extension.sh
+      - name: No keys in the repository
+        run: "! grep -rEn 'slv_[A-Za-z0-9]{20,}' . --exclude-dir=.git"

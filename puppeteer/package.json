@@ -1,0 +1,8 @@
+{
+  "name": "solvecha-puppeteer-example",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": { "start": "node solve-with-extension.mjs", "check": "node --check solve-with-extension.mjs" },
+  "dependencies": { "puppeteer": "^25.16.0" }
+}
