@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://solvecha.com"><img src="https://solvecha.com/site/static/apple-touch-icon.png" width="64" height="64" alt="Solvecha"></a>
+  <a href="https://solvecha.com/?utm_source=github&utm_medium=readme&utm_campaign=solvecha-playwright-example"><img src="https://solvecha.com/site/static/apple-touch-icon.png" width="64" height="64" alt="Solvecha"></a>
 </p>
 
 <h1 align="center">Solvecha + Playwright example</h1>
@@ -14,7 +14,7 @@
   <a href="https://github.com/Solvecha/solvecha-playwright-example/actions/workflows/ci.yml"><img src="https://github.com/Solvecha/solvecha-playwright-example/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
   <a href="https://playwright.dev"><img src="https://img.shields.io/badge/Playwright-Node.js%20%7C%20Python-2EAD33.svg" alt="Playwright"></a>
-  <a href="https://solvecha.com"><img src="https://img.shields.io/badge/Solvecha-free%20tier%20100%2Fday-5b5bd6.svg" alt="Solvecha free tier"></a>
+  <a href="https://solvecha.com/?utm_source=github&utm_medium=readme&utm_campaign=solvecha-playwright-example"><img src="https://img.shields.io/badge/Solvecha-free%20tier%20100%2Fday-5b5bd6.svg" alt="Solvecha free tier"></a>
 </p>
 
 ---
@@ -31,7 +31,7 @@ The test target is Google's public demo page, `https://www.google.com/recaptcha/
 
 ## Before you start
 
-1. Create a free account on [solvecha.com](https://solvecha.com/register) and copy your key from the [dashboard](https://solvecha.com/dashboard). The free tier has 100 successful solves per day.
+1. Create a free account on [solvecha.com](https://solvecha.com/register?utm_source=github&utm_medium=readme&utm_campaign=solvecha-playwright-example) and copy your key from the [dashboard](https://solvecha.com/dashboard?utm_source=github&utm_medium=readme&utm_campaign=solvecha-playwright-example). The free tier has 100 successful solves per day.
 2. `export SOLVECHA_API_KEY=slv_...`
 3. Get the extension (extension mode only):
 
@@ -106,7 +106,7 @@ cd python && xvfb-run -a python solve_with_cloakbrowser.py
 BROWSER=cloakbrowser xvfb-run -a npm run api     # API mode in CloakBrowser
 ```
 
-More: [Using Solvecha with CloakBrowser](https://solvecha.com/docs/cloakbrowser).
+More: [Using Solvecha with CloakBrowser](https://solvecha.com/docs/cloakbrowser?utm_source=github&utm_medium=readme&utm_campaign=solvecha-playwright-example).
 
 ## Puppeteer and Selenium
 
@@ -135,6 +135,6 @@ Google's difficulty changes with the IP and the browser. In an earlier test on t
 
 ## Links
 
-[Website](https://solvecha.com) · [Docs](https://solvecha.com/docs/browser-extension) · [Extension releases](https://github.com/Solvecha/solvecha-extension/releases) · [Agent skills](https://github.com/Solvecha/solvecha-skills) · [Migrate from NopeCHA](https://github.com/Solvecha/nopecha-to-solvecha)
+[Website](https://solvecha.com/?utm_source=github&utm_medium=readme&utm_campaign=solvecha-playwright-example) · [Docs](https://solvecha.com/docs/browser-extension?utm_source=github&utm_medium=readme&utm_campaign=solvecha-playwright-example) · [Extension releases](https://github.com/Solvecha/solvecha-extension/releases) · [Agent skills](https://github.com/Solvecha/solvecha-skills) · [Migrate from NopeCHA](https://github.com/Solvecha/nopecha-to-solvecha)
 
 MIT licensed. Solvecha is not affiliated with Google, Playwright, CloakHQ, NopeCHA or CapSolver.
